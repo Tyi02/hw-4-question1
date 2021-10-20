@@ -1,0 +1,26 @@
+package CSCI125hw;
+
+public class hw4 {
+
+	public static void main(String[]args) {
+		// TODO Auto-generated method stub
+double numbers[] = new double[] {10, 5, 7, 15, 6};
+isStrictlyincreasing(numbers);
+System.out.println("Answer:" + isStrictlyincreasing(numbers));
+	
+		
+		
+		
+}
+
+	private static boolean isStrictlyincreasing(double[] numbers) {
+		// TODO Auto-generated method stub
+		int n = numbers.length;
+		
+		for(int i = 1; i < n; i++) {
+			if(numbers[i-1]<numbers[i])
+				return false;
+			
+		}
+		return true;
+	}}
